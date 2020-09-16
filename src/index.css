@@ -1,3 +1,8 @@
+*{
+  margin:0;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,178 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App__body{
+  display: flex;
+}
+
+.App {
+  background-color: #f1f2f5;
+  height: 100vh;
+}
+
+/* HEADER */
+.header__body {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+
+}
+.header__left > img {
+  height: 40px;
+  /* border-radius: 50px; */
+}
+.header__left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 33px;
+}
+
+.header__input > input{
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.header__middle {
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+
+.header__option{
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header__option:hover{
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30;
+  border-bottom: none;
+}
+
+.header__option > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.header__option:hover > .MuiSvgIcon-root{
+  color: #2e81f4;
+}
+
+.header__option--active{
+  border-bottom: 4px solid #2e81f4;
+}
+
+.header__option--active > .MuiSvgIcon-root{
+  color: #2e81f4;
+}
+
+.header__info {
+  display: flex;
+  align-items: 10px;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
+
+.header__right {
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.Sidebar{
+  padding: 25px 10px;
+  flex: 0.33;
+}
+
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebarRow:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.sidebarRow > h4 {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.sidebarRow > .MuiSvgIcon-root{
+  font-size: xx-large;
+  color: #2e81f4;
+}
+
+
+/* STORY */
+
+.Story{
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 200px;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: transform 100ms ease-in;
+  cursor:pointer;
+}
+
+.Story:hover {
+  transform: scale(1.07);
+}
+
+.story__avatar {
+  margin: 10px;
+  border: 5px solid #2e81f4;
+}
+
+.Story > h4 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+/* STORYREEL */
+
+.StoryReel {
+  display: flex;
+}
+
+/* FEED */
+
+.feed {
+  flex: 1;
+  padding: 30px 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
