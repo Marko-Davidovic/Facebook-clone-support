@@ -1,7 +1,9 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
+// import {useStateValue} from "./StateProvider"
 
 function Story({image, profileSrc, title}) {
+   
     return (
         <div style={{backgroundImage: `url(${image})`}}
         className="Story"> 

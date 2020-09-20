@@ -7,13 +7,14 @@ import PeopleIcon from "@material-ui/icons/People"
 import ChatIcon from "@material-ui/icons/Chat"
 import StoreFrontIcon from "@material-ui/icons/Storefront"
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary"
-import userEvent from '@testing-library/user-event'
-
+// import userEvent from '@testing-library/user-event'
+import {useStateValue} from "./StateProvider"
 
 function Sidebar() {
+    const [{user}] = useStateValue();
     return (
         <div className="Sidebar">
-            {/* <SidebarRow src={user.photoURL} title={user.displayName}/> */}
+            <SidebarRow src={user.photoURL} title={user.displayName}/>
             <SidebarRow Icon={LocaHospotalIcon} title="COVID-19 Information Centar"/>
             <SidebarRow Icon={EmojiFlagsIcon} title="Pages"/>
             <SidebarRow Icon={PeopleIcon} title="Friends"/>

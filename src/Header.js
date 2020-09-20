@@ -1,4 +1,4 @@
-import { Search } from '@material-ui/icons'
+// import { Search } from '@material-ui/icons'
 import React from 'react'
 import "./Header"
 import SearchIcon from '@material-ui/icons/Search'
@@ -12,10 +12,10 @@ import AddIcon from '@material-ui/icons/Add'
 import ForumIcon from '@material-ui/icons/Forum'
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-
-
+import {useStateValue} from "./StateProvider"
 
 function Header() {
+    const [{user}] = useStateValue();
     return (
         <div className="header__body">
             <div className="header__left">
@@ -47,8 +47,8 @@ function Header() {
 
             <div className="header__right">
                 <div className="header__info">
-                    <Avatar />
-                    <h4>Marko Davidovic</h4>
+                    <Avatar src={user.photoURL}/>
+                    <h4>{user.displyName}</h4>
                 </div>
 
                 <IconButton>
