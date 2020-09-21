@@ -44,7 +44,7 @@ function MessageSender() {
                     placeholder={`"What's on your mind, ${user.displayName}"`} />
 
                     <input 
-                    value = {imageUrl}
+                    value= {imageUrl}
                     onChange={e => setImageUrl(e.tartget.value)}
                     type="text" 
                     placeholder="Image URL"/>
