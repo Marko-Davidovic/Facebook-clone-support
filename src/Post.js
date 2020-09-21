@@ -8,7 +8,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle"
 import "./Post.css"
 // import {useStateValue} from "./StateProvider"
 
-function Post({profilePIC, image, username, createdAt, message}) {
+function Post({ profilePIC, image, username, createdAt, message}) {
     return (
         <div className="post">
             <div className="post__top">
@@ -20,10 +20,10 @@ function Post({profilePIC, image, username, createdAt, message}) {
                 </div>
             </div>
             <div className="post__bottom">
-                <p>{message}</p>
+                <p>{ message }</p>
             </div>
             <div className="post__image">
-                <img src={image} alt="" />
+                <img src={ image } alt="" />
             </div>
             <div className="post__options">
                 <div className="post__option">
