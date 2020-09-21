@@ -7,7 +7,8 @@ import InserEmoticonIcon from "@material-ui/icons/InsertEmoticon"
 import "./MessageSender.css"
 import {useStateValue} from "./StateProvider"
 import db from "./firebase"
-import firebase from "./firebase"
+import firebase from "firebase"
+
 
 
 function MessageSender() {
@@ -21,7 +22,7 @@ function MessageSender() {
         // DB staff
         db.collection('posts').add({
             message: input,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            createdAt: firebase.firestore.FieldValue.serverTimestamp(),
             profilePIC:user.photoURL,
             username: user.displayName,
             image: imageUrl

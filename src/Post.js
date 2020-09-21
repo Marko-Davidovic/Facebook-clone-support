@@ -8,7 +8,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle"
 import "./Post.css"
 // import {useStateValue} from "./StateProvider"
 
-function Post({profilePIC, image, username, timestamp, message}) {
+function Post({profilePIC, image, username, createdAt, message}) {
     return (
         <div className="post">
             <div className="post__top">
@@ -16,7 +16,7 @@ function Post({profilePIC, image, username, timestamp, message}) {
                 className="post__avatar" />
                 <div className="post__topInfo">
                      <h3>{username}</h3>
-                     <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
+                     <p>{new Date(createdAt?.toDate()).toUTCString()}</p>
                 </div>
             </div>
             <div className="post__bottom">
