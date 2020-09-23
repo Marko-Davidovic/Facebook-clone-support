@@ -29,6 +29,12 @@ function StoryReel() {
             profileSrc="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
             title="Joshua Earlen"
             />
+            <Story 
+            image="https://images.unsplash.com/photo-1600807497639-3b5d8e74a232?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            profileSrc="https://images.unsplash.com/photo-1600612623026-11c3e6160c7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            title="Jeanine Blake"
+            />
+
         </div> 
     )
 }

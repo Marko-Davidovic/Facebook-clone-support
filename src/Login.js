@@ -30,8 +30,11 @@ function Login() {
                 <img src="https://www.logo.wine/a/logo/Facebook/Facebook-Logo.wine.svg" alt="" />
             </div>
             <Button type="submit" onClick={singIn}>
-                Sing IN 
+                Sign IN 
             </Button>
+            <div>
+                <p>Created by Marko Davidovic</p>
+            </div>
         </div>
     )
 }
